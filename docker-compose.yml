@@ -11,6 +11,4 @@ services:
       - "8000:8000"
     environment:
       - SECRET_KEY=${SECRET_KEY:-changethissecretkey123secretlongkeyfortest}
-      - FIRST_SUPERUSER=${FIRST_SUPERUSER:-admin@example.com}
-      - FIRST_SUPERUSER_PASSWORD=${FIRST_SUPERUSER_PASSWORD:-adminpassword}
     restart: on-failure

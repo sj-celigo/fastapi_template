@@ -1,11 +1,10 @@
 # FastAPI Template
 
-A robust FastAPI template project with security and essential modules for building production-ready REST APIs.
+A lightweight FastAPI template project with essential modules for building REST APIs.
 
 ## Features
 
 - 🚀 Modern FastAPI framework
-- 🔒 JWT Authentication with role-based access control
 - 📝 Pydantic data validation
 - 🧪 Testing suite with pytest
 - 🔍 OpenAPI documentation
@@ -21,10 +20,8 @@ A robust FastAPI template project with security and essential modules for buildi
 fastapi_template/
 ├── app/
 │   ├── api/                 # Route definitions
-│   ├── core/                # App settings, security, logging
-│   ├── models/              # Pydantic schemas and models
-│   ├── services/            # Business logic
-│   ├── auth/                # Authentication logic (JWT/OAuth)
+│   ├── core/                # App settings and logging
+│   ├── models/              # Pydantic schemas
 │   ├── middlewares/         # Custom middlewares
 │   └── main.py              # Entry point
 ├── tests/                   # Unit and integration tests
@@ -82,6 +79,16 @@ fastapi_template/
 Run tests:
 ```bash
 pytest
+```
+
+## Health Check
+
+The template includes a basic health check endpoint at `/healthz` that returns:
+
+```json
+{
+  "status": "healthy"
+}
 ```
 
 ## License
