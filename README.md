@@ -10,7 +10,7 @@ A lightweight FastAPI template project with essential modules for building REST 
 - 🔍 OpenAPI documentation
 - 🛡️ Security features (CORS, rate limiting, security headers)
 - 🎯 Health check endpoints
-- 📈 Logging with loguru
+- 📈 JSON structured logging with OpenTelemetry tracing
 - 🔄 Docker and docker-compose for development and deployment
 - 📦 Environment variable configuration
 
